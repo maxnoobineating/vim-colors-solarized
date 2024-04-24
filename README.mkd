@@ -13,6 +13,7 @@ replaced terminal_itallic logic to this:
 tweaking on vimrc file may be needed:
     https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic
 
+
 ---
 Title: Solarized Colorscheme for Vim
 Description: Precision colors for machines and people
