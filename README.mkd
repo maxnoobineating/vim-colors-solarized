@@ -1,3 +1,18 @@
+Modification
+============================
+based on: 
+    https://github.com/altercation/vim-colors-solarized/issues/120
+replaced terminal_itallic logic to this:
+
+        if has("gui_running") || ( has("unix") && &t_ZH ==# "\033[3m" )
+            let s:terminal_italic=1
+        else
+            let s:terminal_italic=0
+        endif
+
+tweaking on vimrc file may be needed:
+    https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic
+
 ---
 Title: Solarized Colorscheme for Vim
 Description: Precision colors for machines and people
