@@ -14,16 +14,6 @@ tweaking on vimrc file may be needed:
     https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic
 
 
----
-Title: Solarized Colorscheme for Vim
-Description: Precision colors for machines and people
-Author: Ethan Schoonover
-Colors: light yellow
-Created:  2011 Mar 15
-Modified: 2011 Apr 16
-
----
-
 Solarized Colorscheme for Vim
 =============================
 
