@@ -148,12 +148,18 @@ let s:terms_noitalic=[
 if has("gui_running")
     let s:terminal_italic=1 " TODO: could refactor to not require this at all
 else
-    let s:terminal_italic=0 " terminals will be guilty until proven compatible
-    for term in s:terms_italic
-        if $TERM_PROGRAM =~ term
-            let s:terminal_italic=1
-        endif
-    endfor
+    " let s:terminal_italic=0 " terminals will be guilty until proven compatible
+    " for term in s:terms_italic
+    "     if $TERM_PROGRAM =~ term
+    "         let s:terminal_italic=1
+    "     endif
+    " endfor
+    " from: https://github.com/altercation/vim-colors-solarized/issues/120
+    if ( has("unix") && &t_ZH ==# "\033[3m" )
+        let s:terminal_italic=1
+    else
+        let s:terminal_italic=0
+    endif
 endif
 
 " }}}
